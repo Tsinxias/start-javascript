@@ -29,9 +29,8 @@ name2.init('Doe', 'Jane');
 
 adding.push(name1, name2);
 
-var choice = prompt('Enter the number of the option chosen: ');
-
 while (choice !== 0) { //Every
+  var choice = prompt('Enter the number of the option chosen: ');
   if (choice === '1') {
     console.log('Here\'s the list of all your contacts:');
     adding.forEach(added => console.log(added.describe()));
@@ -49,5 +48,4 @@ while (choice !== 0) { //Every
       console.log('Quitted');
       break;
   }
-  var choice = prompt('Enter the number of the option chosen: ');
 };
